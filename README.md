@@ -27,7 +27,7 @@
 | **딥러닝 (분류)** | 2-Layer FC Network (NumPy), VGG-16 / ResNet-50 (PyTorch) |
 | **딥러닝 (분할)** | UNet, ResNet-50 Encoder UNet — Pascal VOC Semantic Segmentation |
 
-**사용 기술:** C++ · OpenCV 4.x · Python · NumPy · PyTorch · Jupyter Notebook · Google Colab
+**사용 기술:** C++ · OpenCV 4.x · Python · NumPy · PyTorch · Google Colab
 
 ---
 
