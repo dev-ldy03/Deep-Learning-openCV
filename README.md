@@ -1,7 +1,5 @@
-# OSP Assignments
-
-> **컴퓨터공학과 이다영**  
-> 영상처리 및 딥러닝 기반 컴퓨터 비전 과목(O.S.P) 과제 포트폴리오
+# OSP (Open Software Project) 
+> 영상처리 및 딥러닝 기반 컴퓨터 비전 포트폴리오
 
 ---
 
