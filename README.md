@@ -260,7 +260,7 @@ python main_resnet.py      # ResNet-Encoder UNet
 ## 학습 흐름
 
 ```
-[전통적 영상처리]                    [딥러닝]
+[computer vision]                    
 Task 01 ─ 기하학적 변환
 Task 02 ─ 히스토그램
 Task 03 ─ 공간 필터링
@@ -271,6 +271,8 @@ Task 07 ─ SIFT/SURF
 Task 08 ─ Hough·스티칭
          │
          ▼
+
+[Deep Learning]
 Task 09 ─ FC Network (NumPy, 역전파 직접 구현)
 Task 10 ─ CNN 분류 (VGG-16, ResNet-50)
 Task 11 ─ Semantic Segmentation (UNet)
