@@ -17,7 +17,7 @@
 |------|-----------|
 | **기하학적 변환** | 역방향 매핑 기반 이미지 회전, Affine 변환, 파노라마 스티칭, Alpha Blending |
 | **히스토그램 처리** | PDF/CDF 분석, Stretching / Equalization / Matching (Gray·RGB·YUV) |
-| **공간 필터링** | Mean, Gaussian(분리 가능), Sobel, Laplacian, Unsharp Masking — 경계 처리 3종 직접 구현 |
+| **공간 필터링** | Mean, Gaussian(분리 가능), Sobel, Laplacian, Unsharp Masking — 경계 처리 3종 구현 |
 | **노이즈 & 복원** | Gaussian / Salt & Pepper 노이즈 추가 및 Gaussian·Median·Bilateral 필터 복원 |
 | **세그멘테이션** | Adaptive Thresholding, K-Means, Mean Shift |
 | **특징점 & 매칭** | LoG, Canny, Harris Corner, SIFT, SURF, Homography, RANSAC |
@@ -85,7 +85,7 @@ OSP_Assignments/
 | `Sobel*.cpp` / `Laplacian*.cpp` | 에지 검출 |
 | `Unsharp*.cpp` | **Unsharp Masking** 기반 선명화 |
 
-**핵심 구현:** Zero-padding / Mirroring / Adjust-kernel 3종 **경계 처리** 직접 구현, 이방성 가우시안(`sigmaT`, `sigmaS`) 지원
+**핵심 구현:** Zero-padding / Mirroring / Adjust-kernel 3종 **경계 처리** 구현, 이방성 가우시안(`sigmaT`, `sigmaS`) 지원
 
 ---
 
@@ -115,7 +115,7 @@ OSP_Assignments/
 
 | 파일 | 내용 |
 |------|------|
-| `LoG.cpp` | Gaussian Smoothing + Laplacian → **LoG 에지 검출** (직접 구현) |
+| `LoG.cpp` | Gaussian Smoothing + Laplacian → **LoG 에지 검출** |
 | `Canny.cpp` | OpenCV Canny — Non-maximum Suppression, Double Thresholding |
 | `Harris_corner.cpp` | **Harris Corner** 검출, NMS 및 Subpixel Refinement |
 
@@ -273,7 +273,7 @@ Task 08 ─ Hough·스티칭
          ▼
 
 [Deep Learning]
-Task 09 ─ FC Network (NumPy, 역전파 직접 구현)
+Task 09 ─ FC Network (NumPy, 역전파 구현)
 Task 10 ─ CNN 분류 (VGG-16, ResNet-50)
 Task 11 ─ Semantic Segmentation (UNet)
 ```
